@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/sonntHT1004/argocd-demo-hmm'
-    path: hnv-be-common
+    path: hnv-be-test
     targetRevision: main
   destination:
     server: 'https://kubernetes.default.svc'
