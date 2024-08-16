@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "MYAPP"
+  name: hnv-be-test
   namespace: default
   labels:
-    app: "MYAPP"
+    app: hnv-be-test
 spec:
   containers:
-  - name: MYAPP
+  - name: hnv-be-test
     image: "932531822723.dkr.ecr.ap-northeast-2.amazonaws.com/hnv-be-test:latest"
     resources:
       limits:
@@ -16,12 +16,6 @@ spec:
       requests:
         cpu: 100m
         memory: 200Mi
-    env:
-    - name: DB_HOST
-      valueFrom:
-        configMapKeyRef:
-          name: MYAPP
-          key: DB_HOST
     ports:
     - containerPort:  80
       name:  http
