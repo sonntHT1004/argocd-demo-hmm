@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: hnv-be-test
-    image: "932531822723.dkr.ecr.ap-northeast-2.amazonaws.com/hnv-be-test:latest"
+    image: "932531822723.dkr.ecr.ap-northeast-2.amazonaws.com/hnv-be-test:0.0.1"
     resources:
       limits:
         cpu: 200m
