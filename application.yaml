@@ -8,20 +8,18 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:
-    name: ''
-    namespace: hnv
-    server: 'https://kubernetes.default.svc'
+  project: default
   source:
-    path: overlays/dev
-    repoURL: 'https://github.com/vvnst/hnv-be-adm.git'
-    targetRevision: master
-      
-  sources: []
-  project: hnv 
+    repoURL: 'https://github.com/sonntHT1004/argocd-demo-hmm'
+    path: hnv-be-common
+    targetRevision: main
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: hnv
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+
