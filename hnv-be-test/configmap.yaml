@@ -5,4 +5,4 @@ metadata:
   name: test-config
   namespace: hnv
 data:
-  TEST: "test1"
+  TEST: "test2"
