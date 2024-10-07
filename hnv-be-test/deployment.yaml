@@ -5,6 +5,8 @@ metadata:
   namespace: hnv
   labels:
     app: test
+  annotations:
+    reloader.stakater.com/auto: "true"
 spec:
   replicas: 1
   selector:
